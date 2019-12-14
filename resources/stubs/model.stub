@@ -1,0 +1,30 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+use Kdion4891\Lac\Components\LacField;
+use Kdion4891\Lac\Traits\LacModel;
+
+class DummyModelClass extends Model
+{
+    use LacModel;
+
+    public function fields()
+    {
+        return [
+            LacField::make('ID')
+                ->tableColumn()->tableSearchable()->tableSortable()->tableOrder('desc'),
+
+            LacField::make('Name')
+                ->tableColumn()->tableSearchable()->tableSortable()
+                ->input()->inputCreate()->inputEdit()
+                ->rules(['required', 'min:2']),
+
+            LacField::make('Created At')
+                ->tableColumn()->tableSearchable()->tableSortable(),
+
+            LacField::make('Updated At'),
+        ];
+    }
+}

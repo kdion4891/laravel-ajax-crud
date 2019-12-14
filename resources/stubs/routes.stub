@@ -1,0 +1,2 @@
+Route::post('DummyTable/bulk/{method}', 'DummyControllerClass@bulk')->name('DummyTable.bulk');
+Route::resource('DummyTable', 'DummyControllerClass');

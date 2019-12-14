@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\DummyModelClass;
+use Kdion4891\Lac\Traits\LacController;
+
+class DummyControllerClass extends Controller
+{
+    use LacController;
+
+    public function __construct()
+    {
+        $this->model = new DummyModelClass;
+        $this->middleware('auth');
+    }
+}

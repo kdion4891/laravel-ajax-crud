@@ -1,0 +1,30 @@
+{
+    "name": "kdion4891/laravel-ajax-crud",
+    "description": "Build Laravel 6 CRUD apps in record time!",
+    "homepage": "https://github.com/kdion4891/laravel-ajax-crud",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Dion",
+            "email": "kdion4891@icloud.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "6.*",
+        "yajra/laravel-datatables-html": "^4.0",
+        "yajra/laravel-datatables-oracle": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kdion4891\\Lac\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kdion4891\\Lac\\Providers\\LacServiceProvider"
+            ]
+        }
+    }
+}
