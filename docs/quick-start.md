@@ -44,4 +44,4 @@ Run the migration:
 
     php artisan migrate
     
-Log into your app and click the `Vehicles` link in the navbar to view the CRUD.
+Log into your app with any auth `User` and click the `Vehicles` link in the navbar to view the CRUD.
