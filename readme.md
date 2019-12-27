@@ -1,3 +1,13 @@
+**Looking for more of an admin panel package?**
+
+Check out my latest package, Valiant:
+
+https://github.com/kdion4891/valiant
+
+A full featured Laravel 6 admin panel package!
+
+---
+
 ![Imgur](https://i.imgur.com/Tj313Vo.jpg)
 
 # Laravel AJAX CRUD
